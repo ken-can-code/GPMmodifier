@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            Panel Attack | Print modified GPM replay
+        </title>
+    </head> 
+      
+    <body style = "text-align:center;" id = "body"> 
+          
+        <h1 style = "color:green;" > 
+            Change GPM of training replay in Panel Attack 
+        </h1>
+          
+        <p>
+            Paste original replay and aGPM multiple number, then click the button below.
+            <br>
+            <br>
+            For example, a 20gpm replay file with a 1.5x multiple would make it roughly 30gpm.
+            <br>
+            A 20gpm replay file with a 0.5 multiple would make it roughly 10gpm etc.
+            <br>
+            The same attack pattern is simply happening faster or slower.
+            <br>
+            A 1.5x multiple on a 3 minute replay sequence would make it 2 minutes, for example.
+        </p>
+
+        <textarea rows="5" cols="80" id="originalReplay" placeholder="paste original replay here"></textarea>
+        <br>
+        <br>
+        <input id="multiple" type="text" size="40" placeholder="enter a number to multiply gpm by e.g. 1.5"></input>
+        <button onclick = "changeGPM()"> 
+            show modified replay below
+        </button>
+        <br>
+        <br>
+        <textarea rows="5" cols="80" id="printHere" placeholder
+        = "copy and paste what appears here into a text file and name it with a .json extention, then place it in your training folder in Panel Attack. Restart Panel attack as needed. Using ctrl A or command A to select all is recommended." style 
+        = "color:green; font-size: 20px; font-weight: bold;"></textarea>
+          
+        <script src="changeGPM.js"></script>
+        
+    </body> 
+</html>                    
